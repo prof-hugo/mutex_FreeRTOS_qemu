@@ -4,7 +4,7 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
-../no_mutex_FreeRTOS_qemu.c \
+../mutex_FreeRTOS_qemu.c \
 ../stm32f4_discovery.c \
 ../system_stm32f4xx.c 
 
@@ -12,7 +12,7 @@ S_UPPER_SRCS += \
 ../startup_stm32f407xx.S 
 
 OBJS += \
-./no_mutex_FreeRTOS_qemu.o \
+./mutex_FreeRTOS_qemu.o \
 ./startup_stm32f407xx.o \
 ./stm32f4_discovery.o \
 ./system_stm32f4xx.o 
@@ -21,7 +21,7 @@ S_UPPER_DEPS += \
 ./startup_stm32f407xx.d 
 
 C_DEPS += \
-./no_mutex_FreeRTOS_qemu.d \
+./mutex_FreeRTOS_qemu.d \
 ./stm32f4_discovery.d \
 ./system_stm32f4xx.d 
 
